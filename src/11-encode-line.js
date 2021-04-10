@@ -10,6 +10,7 @@
  */
 function encodeLine(/* str */) {
   throw new Error('Not implemented');
+  // regex (?)1 => `${entries}\?`
 }
 
 module.exports = encodeLine;

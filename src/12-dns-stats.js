@@ -22,6 +22,7 @@
  */
 function getDNSStats(/* domains */) {
   throw new Error('Not implemented');
+  // regex (?\.) => number +1, search until .ru ???^|! for an ending
 }
 
 module.exports = getDNSStats;

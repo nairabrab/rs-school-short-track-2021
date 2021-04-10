@@ -15,6 +15,9 @@
  */
 function renameFiles(/* names */) {
   throw new Error('Not implemented');
+  // start with names[1]
+  // look for previous entries
+  // add `(${entries})` to the name if any
 }
 
 module.exports = renameFiles;

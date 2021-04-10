@@ -12,6 +12,8 @@
  */
 function getSumOfDigits(/* n */) {
   throw new Error('Not implemented');
+  // n = [...n.toString()].reduce((cur, val) => Number(cur) + Number(val));
+  // return n > 9 ? getSumOfDigits(n) : n;
 }
 
 module.exports = getSumOfDigits;

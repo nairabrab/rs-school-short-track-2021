@@ -19,6 +19,9 @@
 
 function removeKFromList(/* l, k */) {
   throw new Error('Not implemented');
+
+  // -> array?
+  // array.filter(el => el !== k)
 }
 
 module.exports = removeKFromList;
