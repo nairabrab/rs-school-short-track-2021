@@ -19,7 +19,23 @@
 
 function removeKFromList(/* l, k */) {
   throw new Error('Not implemented');
+  //   for (const val in l) {
+  //     if (Object.hasOwnProperty.call(l, val)) {
+  //       if (this.value === k) {
+  //         this.next = this.next.next;
+  //         this.value = this.next.value;
+  //       }
+  //     }
+  //   }
+  // const keyvalues = Object.entries(l).reverse();
+  //   keyvalues.forEach((arr,i) => {
+  //     if (arr[0] === k) {
+  //       if (i === 0) {keyvalues[]}
+  //       else {};
+  //     }
 
+//   });
+//   return l;
   // -> array?
   // array.filter(el => el !== k)
 }

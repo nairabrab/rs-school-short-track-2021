@@ -10,20 +10,25 @@
  * stack.pop(); // undefined
  *
  */
-class Stack {
-  push(element) {
-    // throw new Error('Not implemented');
-    return new Stack([...this].push(element));
-  }
+class Stack extends Array {
+  // push(element) {
+  //   // throw new Error('Not implemented');
+  //   this.length++;
+  //   this[this.length - 1] = element;
+  //   return this;
+  // }
 
-  pop() {
-    // throw new Error('Not implemented');
-    return new Stack([...this].pop());
-  }
+  // pop() {
+  //   // throw new Error('Not implemented');
+  //   // const lasEl = this[this.length - 1];
+  //   this.length--;
+  //   return this.length ? this : undefined;
+  // }
 
   peek() {
     // throw new Error('Not implemented');
-    return [...this].pop();
+    // const ar = [...this];
+    return this[this.length - 1];
   }
 }
 
