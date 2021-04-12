@@ -1,6 +1,6 @@
 // const ListNode = require('../extensions/list-node');
 
-const ListNode = require('../extensions/list-node');
+// const ListNode = require('../extensions/list-node');
 
 /**
  * Given a singly linked list of integers l and an integer k,
@@ -21,8 +21,8 @@ const ListNode = require('../extensions/list-node');
  * }
  */
 
-function removeKFromList(l, k) {
-  // throw new Error('Not implemented');
+function removeKFromList(/* l, k */) {
+  throw new Error('Not implemented');
   //   for (const val in l) {
   //     if (Object.hasOwnProperty.call(l, val)) {
   //       if (this.value === k) {
@@ -106,16 +106,16 @@ function removeKFromList(l, k) {
 
   // JSON.parse(text[, REVIVER])
 
-  let node = new ListNode(1);
+  // const node = new ListNode(1);
   // if (l.next === null) return l;
-  if (l.value === k) {
-    node.next = JSON.parse(JSON.stringify(l.next.next));
-    node.value = l.next.value;
-  } else {
-    node.next = JSON.parse(JSON.stringify(l.next));
-    node.value = l.value;
-  }
-  return l.next ? removeKFromList(node, k) : l;
+  // if (l.value === k) {
+  //   node.next = JSON.parse(JSON.stringify(l.next.next));
+  //   node.value = l.next.value;
+  // } else {
+  //   node.next = JSON.parse(JSON.stringify(l.next));
+  //   node.value = l.value;
+  // }
+  // return l.next ? removeKFromList(node, k) : l;
 }
 
 module.exports = removeKFromList;
