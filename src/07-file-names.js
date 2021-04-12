@@ -18,6 +18,19 @@ function renameFiles(/* names */) {
   // start with names[1]
   // look for previous entries
   // add `(${entries})` to the name if any
+
+//   names.forEach((el, i) => {
+//     const count = 0;
+//     let res = names.join(',') + ',';
+//     const reg = new RegExp(`${el},`);
+//     for (let j = 0; j < i; j++) {
+//       if (res[j] === el) count++;
+//     }
+//     if (count) res.push(`${el}(${count})`);
+//     else res.push(el);
+//     return count ? `${el}(${count})` : el;
+//   });
+//   return res;
 }
 
 module.exports = renameFiles;

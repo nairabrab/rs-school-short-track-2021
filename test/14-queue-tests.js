@@ -1,3 +1,4 @@
+
 const proxyquire = require('proxyquire');
 const sinon = require('sinon');
 const assert = require('assert');

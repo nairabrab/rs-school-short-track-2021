@@ -20,9 +20,17 @@
  * }
  *
  */
-function getDNSStats(/* domains */) {
-  throw new Error('Not implemented');
-  // regex (?\.) => number +1, search until .ru ???^|! for an ending
+function getDNSStats(domains) {
+  // throw new Error('Not implemented');
+  let res = {};
+// domains.forEach(el => {res[el.split('.').reverse().join('.')] = 0});
+// domains.forEach(el => {el.split('.')});
+// domains.forEach(el => {res[`.${el.split('.')[0]}`] = 0});
+const dom = [];
+domains.forEach(el => {dom.push(el.slice(lastIndexOf('.')))});
+res[dom[0]] = dom.length;
+dom.length = 0;
+
 }
 
 module.exports = getDNSStats;
